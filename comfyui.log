@@ -1,0 +1,29 @@
+** ComfyUI startup time: 2024-01-07 18:05:28.338962
+[2024-01-07 18:05] ** Platform: Windows
+[2024-01-07 18:05] ** Python version: 3.10.10 (tags/v3.10.10:aad5f6a, Feb  7 2023, 17:20:36) [MSC v.1929 64 bit (AMD64)]
+[2024-01-07 18:05] ** Python executable: D:\Documents\GitHub\ComfyUI\venv\Scripts\python.exe
+[2024-01-07 18:05] ** Log path: D:\Documents\GitHub\ComfyUI\comfyui.log
+[2024-01-07 18:05] 
+Prestartup times for custom nodes:
+[2024-01-07 18:05]    0.1 seconds: D:\Documents\GitHub\ComfyUI\custom_nodes\ComfyUI-Manager
+[2024-01-07 18:05] 
+Traceback (most recent call last):
+[2024-01-07 18:05]   File "D:\Documents\GitHub\ComfyUI\main.py", line 76, in <module>
+[2024-01-07 18:05]     import execution
+[2024-01-07 18:05]   File "D:\Documents\GitHub\ComfyUI\execution.py", line 13, in <module>
+[2024-01-07 18:05]     import nodes
+[2024-01-07 18:05]   File "D:\Documents\GitHub\ComfyUI\nodes.py", line 20, in <module>
+[2024-01-07 18:05]     import comfy.diffusers_load
+[2024-01-07 18:05]   File "D:\Documents\GitHub\ComfyUI\comfy\diffusers_load.py", line 4, in <module>
+[2024-01-07 18:05]     import comfy.sd
+[2024-01-07 18:05]   File "D:\Documents\GitHub\ComfyUI\comfy\sd.py", line 5, in <module>
+[2024-01-07 18:05]     from comfy import model_management
+[2024-01-07 18:05]   File "D:\Documents\GitHub\ComfyUI\comfy\model_management.py", line 118, in <module>
+[2024-01-07 18:05]     total_vram = get_total_memory(get_torch_device()) / (1024 * 1024)
+[2024-01-07 18:05]   File "D:\Documents\GitHub\ComfyUI\comfy\model_management.py", line 87, in get_torch_device
+[2024-01-07 18:05]     return torch.device(torch.cuda.current_device())
+[2024-01-07 18:05]   File "D:\Documents\GitHub\ComfyUI\venv\lib\site-packages\torch\cuda\__init__.py", line 769, in current_device
+[2024-01-07 18:05]     _lazy_init()
+[2024-01-07 18:05]   File "D:\Documents\GitHub\ComfyUI\venv\lib\site-packages\torch\cuda\__init__.py", line 289, in _lazy_init
+[2024-01-07 18:05]     raise AssertionError("Torch not compiled with CUDA enabled")
+[2024-01-07 18:05] AssertionError: Torch not compiled with CUDA enabled
